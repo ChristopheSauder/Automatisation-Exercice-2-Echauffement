@@ -11,7 +11,7 @@ services:
       - ./public:/usr/share/nginx/html
 
   node:
-    image: node:22-alpine
+    image: node:24-alpine
     user: ${UID:-1000}:${GID:-1000}
     command: npm run dev
     ports:
